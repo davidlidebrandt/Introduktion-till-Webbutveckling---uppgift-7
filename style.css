@@ -5,8 +5,9 @@ body {
 
 header {
     background-color: #002B5B;
-    padding: 1rem;
+    padding: 1.5rem;
     color: #8FE3CF;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
 
 h1 {
@@ -28,6 +29,18 @@ main {
     color: #256D85;
 }
 
+#introText {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 30%;
+    padding: 2.5rem;
+    color: #002B5B;
+    border-radius: 5px;
+    font-weight: 600;
+    margin-top: 3rem;
+    background-color: #8FE3CF;
+    transform: rotate(5deg);
+}
+
 footer {
     background-color: #8FE3CF;
     color: #002B5B;
@@ -36,11 +49,12 @@ footer {
 }
 
 section {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 ul {
-    width: 50% ;
+    width: 50%;
+    padding-inline-start: 1.5rem;
 }
 
 #workSection {
@@ -54,10 +68,10 @@ ul {
 }
 
 #heroImg {
-    background: url("bg2.jpg") no-repeat fixed center;
+    background:#256D85  url("bg.jpg") no-repeat fixed center;
     height: 50vh;
     background-size: cover;
-    opacity: 70%;
+    filter: grayscale(50%);
 }
 
 a {
