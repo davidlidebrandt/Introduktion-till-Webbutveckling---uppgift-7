@@ -1,0 +1,94 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #002B5B;
+    padding: 1rem;
+    color: #8FE3CF;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    height: 100vh;
+}
+
+#h1Span {
+    font-size: small;
+    font-style: italic;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+#headingIcon {
+    color: #256D85;
+}
+
+footer {
+    background-color: #8FE3CF;
+    color: #002B5B;
+    display: grid;
+    place-items: center;
+}
+
+section {
+    padding: 1rem;
+}
+
+ul {
+    width: 50% ;
+}
+
+#workSection {
+    background-color: #8FE3CF;
+    color: #002B5B;
+}
+
+#educationSection {
+    background-color: #002B5B;
+    color: #8FE3CF;
+}
+
+#heroImg {
+    background: url("bg2.jpg") no-repeat fixed center;
+    height: 50vh;
+    background-size: cover;
+    opacity: 70%;
+}
+
+a {
+    text-decoration: none;
+    margin-right: 0.35rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: #8FE3CF;
+}
+
+a:hover {
+    color: rgb(245, 245, 245);
+}
+
+nav {
+    padding-top: 1rem;
+    border-top: 1px solid #256D85;
+}
+
+.contactLink {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 1rem;
+    color: #256D85;
+}
+
+#contactLinksDiv {
+    border-top: 1px solid #256D85;
+    display: grid;
+    place-items: center;
+    padding: 0.5rem;
+    width: 50% ;
+}
+
