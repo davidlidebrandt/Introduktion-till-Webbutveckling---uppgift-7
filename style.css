@@ -11,7 +11,7 @@ header {
     background-color: #002B5B;
     padding: 1.5rem;
     color: #8FE3CF;
-    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-bottom: 1px solid rgb(245, 245, 245);
 }
 
 h1 {
@@ -37,12 +37,18 @@ main {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     width: 30%;
     padding: 2.5rem;
-    color: #256D85;
+    color: #002B5B;
     border-radius: 5px;
     font-weight: 600;
     margin-top: 3rem;
-    background-color: rgb(245, 245, 245);
     transform: rotate(5deg);
+    transition-duration: 500ms;
+}
+
+#introText:hover {
+    transform: rotate(0deg);
+    transition-duration: 500ms;
+    background-color: #8FE3CF;
 }
 
 footer {
@@ -50,6 +56,7 @@ footer {
     color: #002B5B;
     display: grid;
     place-items: center;
+    border-top: 2px solid rgb(245, 245, 245);
 }
 
 section {
@@ -99,7 +106,7 @@ nav {
     height: 40px;
     width: 40px;
     margin-bottom: 1rem;
-    color: #256D85;
+    color: #002B5B;
 }
 
 #contactLinksDiv {
