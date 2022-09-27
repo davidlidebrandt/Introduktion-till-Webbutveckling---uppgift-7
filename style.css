@@ -3,6 +3,10 @@ body {
     margin: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 header {
     background-color: #002B5B;
     padding: 1.5rem;
@@ -33,11 +37,11 @@ main {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     width: 30%;
     padding: 2.5rem;
-    color: #002B5B;
+    color: #256D85;
     border-radius: 5px;
     font-weight: 600;
     margin-top: 3rem;
-    background-color: #8FE3CF;
+    background-color: rgb(245, 245, 245);
     transform: rotate(5deg);
 }
 
