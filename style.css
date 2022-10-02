@@ -11,7 +11,6 @@ header {
     background-color: #002B5B;
     padding: 1.5rem;
     color: #8FE3CF;
-    border-bottom: 1px solid rgb(245, 245, 245);
 }
 
 h1 {
@@ -34,15 +33,13 @@ main {
 }
 
 #introText {
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    width: 30%;
-    padding: 2.5rem;
-    color: #002B5B;
-    border-radius: 5px;
-    font-weight: 600;
-    margin-top: 3rem;
-    transform: rotate(5deg);
-    transition-duration: 500ms;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #e5eafe;
+  opacity: 40%;
 }
 
 #introText:hover {
@@ -57,11 +54,15 @@ footer {
     display: grid;
     place-items: center;
     padding: 1.5px 5px;
-    border-top: 2px solid rgb(245, 245, 245);
 }
 
 section {
     padding: 1.5rem;
+    display: grid;
+}
+
+section div {
+    place-self: center;
 }
 
 ul {
@@ -79,14 +80,15 @@ ul {
 }
 
 #heroImg {
-    background: url("4804443.jpg") no-repeat center;
-    height: 60vh;
+    background: #e5eafe url("4804443.jpg") no-repeat center;
+    height: 50vh;
     background-size: cover;
+    position: relative;
 }
 
 a {
     text-decoration: none;
-    margin-right: 0.35rem;
+    margin-right: 0.55rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #8FE3CF;
@@ -118,7 +120,6 @@ nav {
 
 @media screen and (min-width: 768px) {
     ul {
-        width: 50%;
     }
 
     header {
@@ -127,6 +128,7 @@ nav {
 
     section {
         padding: 1.5rem 5rem;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
     #heroImg {
