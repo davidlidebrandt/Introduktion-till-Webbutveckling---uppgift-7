@@ -1,35 +1,56 @@
 body {
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
 }
 
 html {
-    scroll-behavior: smooth;
-  }
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  background: rgb(245, 245, 245);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+::-webkit-scrollbar-thumb {
+  margin: 0.5rem;
+  background: #256d85;
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #8fe3cf;
+}
 
 header {
-    background-color: #002B5B;
-    padding: 1.5rem;
-    color: #8FE3CF;
+  background-color: #002b5b;
+  padding: 1.5rem;
+  color: #8fe3cf;
 }
 
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
 main {
-    height: 100vh;
+  height: 100vh;
 }
 
 #h1Span {
-    font-size: small;
-    font-style: italic;
-    display: block;
-    margin-bottom: 1rem;
+  font-size: small;
+  font-style: italic;
+  display: block;
+  margin-bottom: 1rem;
 }
 
 #headingIcon {
-    color: #256D85;
+  color: #256d85;
 }
 
 #introText {
@@ -43,102 +64,103 @@ main {
 }
 
 #introText:hover {
-    transform: rotate(0deg);
-    transition-duration: 500ms;
-    background-color: rgb(245, 245, 245);
+  transform: rotate(0deg);
+  transition-duration: 500ms;
+  background-color: rgb(245, 245, 245);
 }
 
 footer {
-    background-color: #e5eafe;
-    color: #002B5B;
-    display: grid;
-    place-items: center;
-    padding: 1.5px 5px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  background-color: #e5eafe;
+  color: #002b5b;
+  display: grid;
+  place-items: center;
+  padding: 1.5px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 section {
-    padding: 1.5rem;
-    display: grid;
+  padding: 1.5rem;
+  display: grid;
 }
 
 section div {
-    place-self: center;
+  place-self: center;
 }
 
 ul {
-    padding-inline-start: 1.5rem;
+  padding-inline-start: 1.5rem;
 }
 
 #workSection {
-    background-color: #8FE3CF;
-    color: #002B5B;
+  background-color: #8fe3cf;
+  color: #002b5b;
 }
 
 #educationSection {
-    background-color: #002B5B;
-    color: #8FE3CF;
+  background-color: #002b5b;
+  color: #8fe3cf;
 }
 
 #techStackSection {
-    background-color: #8FE3CF;
-    color: #002B5B;
+  background-color: #8fe3cf;
+  color: #002b5b;
 }
 
 #heroImg {
-    background: #e5eafe url("4804443.jpg") no-repeat center;
-    height: 50vh;
-    background-size: cover;
-    position: relative;
+  background: #e5eafe url("4804443.jpg") no-repeat center;
+  height: 50vh;
+  background-size: cover;
+  position: relative;
 }
 
 a {
-    text-decoration: none;
-    margin-right: 0.55rem;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    color: #8FE3CF;
+  text-decoration: none;
+  margin-right: 0.55rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #8fe3cf;
 }
 
 a:hover {
-    color: rgb(245, 245, 245);
+  color: rgb(245, 245, 245);
 }
 
 nav {
-    padding-top: 1rem;
-    border-top: 1px solid #256D85;
+  padding-top: 1rem;
+  border-top: 1px solid #256d85;
 }
 
 .contactLink {
-    color: #002B5B;
+  color: #002b5b;
 }
 
 .contactLink:hover {
-    color: #8FE3CF;
+  color: #8fe3cf;
 }
 
 #contactLinksDiv {
-    display: grid;
-    place-items: center;
-    padding: 0.5rem;
+  display: grid;
+  place-items: center;
+  padding: 0.5rem;
 }
 
 @media screen and (min-width: 768px) {
-    ul {
-    }
+  ul {
+  }
 
-    header {
-        padding: 1.5rem 4rem;
-    }
+  header {
+    padding: 1.5rem 4rem;
+  }
 
-    section {
-        padding: 1.5rem 5rem;
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
+  section {
+    padding: 1.5rem 5rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 
-    #heroImg {
-        background-size: contain;
-        background-color: #e5eafe;
-     }
+  #heroImg {
+    background-size: contain;
+    background-color: #e5eafe;
+  }
 }
-
