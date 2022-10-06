@@ -80,13 +80,17 @@ footer {
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
+h2 {
+  text-align: center;
+}
+
 section {
   padding: 1.5rem;
   display: grid;
 }
 
 section div {
-  place-self: center;
+  justify-self: center;
 }
 
 ul {
@@ -115,6 +119,23 @@ ul {
   position: relative;
 }
 
+#techListParent {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  font-weight: 600;
+}
+
+.largeIconParent {
+  display: grid;
+  place-self: center;
+}
+
+.teachList {
+  padding: 1rem 3rem;
+  border-left: 1px solid #002b5b;
+  margin: 2rem;
+}
+
 a {
   text-decoration: none;
   margin-right: 0.55rem;
@@ -125,6 +146,10 @@ a {
 
 a:hover {
   color: rgb(245, 245, 245);
+}
+
+li {
+  margin-top: 10px;
 }
 
 nav {
@@ -140,15 +165,26 @@ nav {
   color: #8fe3cf;
 }
 
+.large-icon {
+  display: none !important;
+}
+
+.small-icon {
+  font-size: larger !important;
+  margin-left: 8px !important;
+}
+
 #contactLinksDiv {
   display: grid;
   place-items: center;
   padding: 0.5rem;
 }
 
+#techListHeading {
+  grid-column: span 2 / span 2;
+}
+
 @media screen and (min-width: 768px) {
-  ul {
-  }
 
   header {
     padding: 1.5rem 4rem;
@@ -159,8 +195,21 @@ nav {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
+  h2 {
+    text-align: left;
+  }
+
   #heroImg {
     background-size: contain;
     background-color: #e5eafe;
   }
+
+  .large-icon {
+    display: block !important;
+  }
+
+  .small-icon {
+    display: none !important;
+  }
+  
 }
