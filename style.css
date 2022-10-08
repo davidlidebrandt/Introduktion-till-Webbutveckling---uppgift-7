@@ -117,6 +117,8 @@ ul {
   height: 50vh;
   background-size: cover;
   position: relative;
+  animation-name: fadeIn;
+  animation-duration: 10s;
 }
 
 #techListParent {
@@ -213,3 +215,11 @@ nav {
   }
   
 }
+
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 100}
+}
+
+
